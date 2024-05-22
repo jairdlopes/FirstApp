@@ -17,16 +17,18 @@
     
     <ion-item>
       <ion-label position="floating">Base</ion-label>
-      <ion-input type="text" placeholder="Informe valor para base"></ion-input>
+      <ion-input type="number"placeholder="Informe valor para base" name="base" [(ngModel)]="base"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label position="floating">Altura</ion-label>
-      <ion-input type="text" placeholder="Informe valor para altura"></ion-input>
+      <ion-input type="number" placeholder="Informe valor para altura" name="altura" [(ngModel)]="altura"></ion-input>
     </ion-item>
 
-
-      <ion-button color="secondary">Calcular</ion-button>
+ 
+      <ion-button color="secondary" (click)="CalcularArea()"> Calcular</ion-button><br>
+      <ion-label>Resposta</ion-label><br>
+      <ion-label>A área é {{resultado}}</ion-label>
     
 
 
