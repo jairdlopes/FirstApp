@@ -10,7 +10,11 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'quadrado',
+    loadChildren: () => import('./quadrado/quadrado.module').then( m => m.QuadradoPageModule)
   },
+
 ];
 
 @NgModule({
